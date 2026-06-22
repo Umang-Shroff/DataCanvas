@@ -1,5 +1,6 @@
 import { defineStore } from "pinia";
 import type { Edge, Node } from "@vue-flow/core";
+import { triggerAutosave } from "../services/autoSave";
 
 export interface Sheet {
   id: string;
@@ -45,15 +46,18 @@ export const useGraphStore = defineStore("graph", {
     switchSheet(id: string) {
       if (this.sheets[id]) {
         this.activeSheetId = id;
+        triggerAutosave();
       }
     },
 
     addNode(node: Node) {
       this.activeSheet.nodes.push(node);
+      triggerAutosave();
     },
 
     addEdge(edge: Edge) {
       this.activeSheet.edges.push(edge);
+      triggerAutosave();
     },
   },
 });
