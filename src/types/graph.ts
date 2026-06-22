@@ -1,19 +1,10 @@
-export interface DataCanvasNode {
-  id: string;
+import type { Edge, Node } from "@vue-flow/core";
+
+export interface CanvasNodeData {
   title: string;
   color: string;
   subItems: string[];
 }
 
-export interface DataCanvasEdge {
-  id: string;
-  source: string;
-  target: string;
-}
-
-export interface Sheet {
-  id: string;
-  name: string;
-  nodes: any[];
-  edges: any[];
-}
+export type CanvasNode = Node<CanvasNodeData>;
+export type CanvasEdge = Edge;
