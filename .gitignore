@@ -1,0 +1,75 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Dependency directories
+node_modules
+
+# Build outputs
+dist
+dist-ssr
+coverage
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# TypeScript
+*.tsbuildinfo
+
+# pnpm
+.pnpm-store
+
+# Vite
+vite.config.ts.timestamp-*
+
+# Cache
+.cache
+.temp
+.tmp
+
+# Tailwind CSS IntelliSense
+.tailwindcss
+
+# Test outputs
+playwright-report
+test-results
+
+/.vscode
+
+# Cypress
+cypress/videos
+cypress/screenshots
+
+# ESLint cache
+.eslintcache
+
+# Package manager lockfiles (keep ONLY if you don't want them committed)
+# pnpm-lock.yaml
+
+# Local netlify/vercel files
+.netlify
+.vercel
+
+# Generated files
+*.local
